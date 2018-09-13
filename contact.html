@@ -7,22 +7,59 @@ Most Recent Revision:
 
 <html lang ="en">
 <head>
-  <center><h1>Perfectly Pasta</h1></center>
+  <title>Contact Us</title>
 </head>
 <body>
   <header>
-    <h1>Contact Us</h1>
+    <center><h1>Perfectly Pasta</h1></center>
   </header>
   <nav>
     <hr />
     <p><a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact Us</a>
     <hr />
   </nav>
-  <a href="index.html"><img src="images/me.png" alt="Portrait of Elven Banzon" /></a>
+  <form action="submit.html" method="POST">
+    <label<label for="Name">Name:</label>
+    <input type="text" id="Name" name="Name"> <br />
+    <label for="Email">Email:</label>
+    <input type="text" id="Email" name="Email"> <br />
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone"> <br />
+    <label for="reason">Reason for Inquiry:</label>
+    <select id="reason" name="reason">
+    <option value="default" selected>Catering</option>
+    <option value="morning">Private Party</option>
+    <option value="afternoon">Feedback</option>
+    <option value="evening">Other</option>
+  </select><br />
+    <label for="info">Additional Information:</label>
+    <textarea id="info" name="info"></textarea><br />
+    Have you been to the Restaurant?
+    <input type="radio" name="answer" value="NO" checked />No
+    <input type="radio" name="answer" value="YES" />Yes<br />
+
+    Best Day to contact you:
+    <input type="checkbox" id="M" name="weekday" value="M">
+    <label for="frontEnd">M</label>
+    <input type="checkbox" id="T" name="weekday" value="T">
+    <label for="backEnd">T</label>
+    <input type="checkbox" id="W" name="weekday" value="W">
+    <label for="database">W</label>
+    <input type="checkbox" id="Th" name="weekday" value="Th">
+    <label for="backEnd">Th</label>
+    <input type="checkbox" id="F" name="weekday" value="F">
+    <label for="database">F</label>
+    <br />
+    <input type="submit" name="submit" value="Send Request">
+
+
+  </form>
   <footer>
     <hr />
-    1000 The Best Part of Town, Little Italy, Texas, 75056
-    972-555-0239
+    <center>
+    <p>1000 The Best Part of Town, Little Italy, Texas, 75056</p>
+    <p>972-555-0239</p>
+    </center>
   </footer>
 </body>
 </html>
