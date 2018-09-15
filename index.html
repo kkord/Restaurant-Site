@@ -9,6 +9,8 @@ Most Recent Revision:
 <head>
   <title>Home Page</title>
   <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />
+  <!-- style the restaurant name with a hosted or embedded font-->
+  <link href="https://fonts.googleapis.com/css?family=Italiana" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -19,16 +21,20 @@ Most Recent Revision:
     <p><a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact Us</a>
     <hr />
   </nav>
+  <div style= "background-color: #E8D5CF">
     <!-- Apply all positioning CSS styles for the image on the home page as an inline style. -->
     <a href="index.html"><img src="images/pasta.jpg" alt="Bowl of Pasta" style="margin:0px auto;display:block" /></a>
-    <p>Restaurant Description</p>
-    <p>Located in the best part of town, Perfectly Pasta strives to provide the best in glutienous delights.
-      Our house made noodles are served al-dente and tossed in your choice of sauce. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-      ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    </p>
-
+    <div style="width: 60%; margin: 0 auto;">
+      <h2><p>Restaurant Description</p></h2>
+      <p>Located in the best part of town, <strong><span style = "font-family: 'Italiana', serif;">Perfectly Pasta</span></strong>
+        strives to provide the best in glutienous delights.
+        Our house made noodles are served al-dente and tossed in your choice of sauce. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+  </div>
   <footer>
     <hr />
 

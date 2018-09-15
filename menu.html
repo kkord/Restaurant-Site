@@ -9,9 +9,30 @@ Most Recent Revision: 9/15/18
 <head>
   <title>Menu</title>
   <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Italiana" rel="stylesheet">
   <!-- Apply menu styles in internal style sheets-->
+
   <style>
+  table {
+    /* menu background-color not white */
+    background-color: #E8D5CF;
+    text-align: center;
+    table-layout: fixed;
+  }
+  table.center {
+    width: 70%;
+    margin: auto;
+  }
+  #beverages
+  {
+    width: 25%;
+    margin: auto;
+  }
+  th {
+    font-size: 1.5em;
+  }
   </style>
+
 </head>
 <body>
   <header>
@@ -23,7 +44,7 @@ Most Recent Revision: 9/15/18
     <hr />
   </nav>
 
-  <table>
+  <table class="center">
     <tr>
        <th>Spaghetti and Meatballs</th>
        <th>Chicken Alfredo</th>
@@ -43,11 +64,10 @@ Most Recent Revision: 9/15/18
    </tr>
  </table>
 
-
- <table>
+ <table class="center">
    <tr>
       <th>Pesto</th>
-      <th>Sausage mozzarella</th>
+      <th>Sausage Mozzarella</th>
       <th>Pasta Trombello</th>
   </tr>
   <tr>
@@ -61,6 +81,27 @@ Most Recent Revision: 9/15/18
       <td>$13.95</td>
   </tr>
 </table>
+
+<table class="center" id="beverages">
+  <caption>Beverages</caption>
+  <tr>
+    <td>Root Beer</td>
+    <td>$3.00</td>
+  </tr>
+  <tr>
+    <td>Bottled Water</td>
+    <td>$1.25</td>
+  </tr>
+  <tr>
+    <td>Lemonade</td>
+    <td>$1.00</td>
+  </tr>
+  <tr>
+    <td>Iced Tea</td>
+    <td>$1.25</td>
+  </tr>
+</table>
+
 
   <footer>
     <hr />

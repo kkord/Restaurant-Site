@@ -9,8 +9,16 @@ Most Recent Revision: 9/14/18
 <head>
   <title>Contact Us</title>
   <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Italiana" rel="stylesheet">
   <!-- Apply menu styles in internal style sheets-->
   <style>
+    form{
+      display:inline-block;
+    }
+    form label {
+      font-weight: bold;
+      text-align: left;
+    }
   </style>
 </head>
 <body>
@@ -36,7 +44,7 @@ Most Recent Revision: 9/14/18
     <option value="afternoon">Feedback</option>
     <option value="evening">Other</option>
   </select><br />
-    <label for="info">Additional Information:</label>
+    <label for="additionalInfo">Additional Information:</label>
     <textarea id="info" name="info"></textarea><br />
     Have you been to the Restaurant?
     <input type="radio" name="answer" value="NO" checked />No
@@ -44,15 +52,15 @@ Most Recent Revision: 9/14/18
 
     Best Day to contact you:
     <input type="checkbox" id="M" name="weekday" value="M">
-    <label for="frontEnd">M</label>
+    <label for="Monday">M</label>
     <input type="checkbox" id="T" name="weekday" value="T">
-    <label for="backEnd">T</label>
+    <label for="Tuesday">T</label>
     <input type="checkbox" id="W" name="weekday" value="W">
-    <label for="database">W</label>
+    <label for="Wednesday">W</label>
     <input type="checkbox" id="Th" name="weekday" value="Th">
-    <label for="backEnd">Th</label>
+    <label for="Thursday">Th</label>
     <input type="checkbox" id="F" name="weekday" value="F">
-    <label for="database">F</label>
+    <label for="Friday">F</label>
     <br />
     <input type="submit" name="submit" value="Send Request">
 

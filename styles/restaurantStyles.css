@@ -4,13 +4,45 @@ Date Created: 9/14/18
 Most Recent Revision: 9/15/18
 */
 
+/*
+Color Pallette
+peach #E8D5CF
+khaki #C9BCB3
+darker brown #8f857c
+dark green #406353
+light green #73AB90
+*/
+
 /* Your header and footer must match across the pages, so store their styles in an external file called restaurantStyles.css */
-header {
+body {
   text-align: center;
+  background-color: #C9BCB3;
+  font-family: Arial, sans-serif;
+}
+header {
+  font-family: 'Italiana', serif;
+  font-size: 2em;
+  color: #406353;
 }
 footer {
-  text-align: center;
+
+  color: #406353;
 }
+nav {
+
+}
+a {
+  font-size: 1.5em;
+  color: #73AB90;
+}
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+a:visited {
+  color: #73AB90
+}
+
 
 
 testing git credential store
