@@ -21,28 +21,46 @@ body {
 }
 header {
   font-family: 'Italiana', serif;
-  font-size: 2em;
+  font-size: 3em;
   color: #406353;
 }
 footer {
-
   color: #406353;
-}
-nav {
-
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 a {
   font-size: 1.5em;
-  color: #73AB90;
+  color: #406353;
 }
 a:hover {
   text-decoration: none;
   font-weight: bold;
+  color: #73AB90
 }
 a:visited {
   color: #73AB90
 }
-
-
-
-testing git credential store
+nav {
+    /* background-color: #406353; */
+    color: #C9BCB3;
+}
+nav:hover {
+    font-weight: bold;
+    /* background-color: #C9BCB3; */
+    color: #406353;
+}
+h1 {
+  text-align: center;
+}
+img {
+  padding: 15px;
+}
+div {
+  padding: 10px;
+}
+#home {
+  color: #73AB90;
+}

@@ -10,11 +10,10 @@ Most Recent Revision: 9/15/18
   <title>Menu</title>
   <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Italiana" rel="stylesheet">
-  <!-- Apply menu styles in internal style sheets-->
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <style>
   table {
-    /* menu background-color not white */
     background-color: #E8D5CF;
     text-align: center;
     table-layout: fixed;
@@ -31,82 +30,93 @@ Most Recent Revision: 9/15/18
   th {
     font-size: 1.5em;
   }
+  h2 {
+    text-align: center;
+  }
   </style>
 
 </head>
 <body>
-  <header>
-    <h1>Perfectly Pasta</h1>
-  </header>
-  <nav>
-    <hr />
-    <p><a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;<a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact Us</a>
-    <hr />
-  </nav>
+  <div class="container">
+    <header>
+      <h1>Perfectly Pasta</h1>
+    </header>
+    <nav class="nav nav-pills flex-column flex-sm-row">
+      <a href="index.html" class="flex-sm-fill text-sm-center nav-link"><span class="glyphicon glyphicon-home"></span>Home</a>
+      <a href="menu.html" class="flex-sm-fill text-sm-center nav-link">Menu</a>
+      <a href="contact.html" class="flex-sm-fill text-sm-center nav-link">Contact Us</a>
+    </nav>
+    <table class="table">
+      <tr>
+         <th>Spaghetti and Meatballs</th>
+         <th>Chicken Alfredo</th>
+         <th>Veal Picatta</th>
+     </tr>
+     <tr>
+         <td>Homemade meatballs made from scratch in our marinara sauce</td>
+         <td>Parmesan cheese and butter that forms a
+           smooth and rich sauce coating the pasta.</td>
+         <td>Tender veal scaloppine dredged in flour and sauteed
+           in butter in a simple pan sauce made with white wine and a generous squeeze of lemon.</td>
+     </tr>
+     <tr>
+         <td>$12.95</td>
+         <td>$13.95</td>
+         <td>$14.95</td>
+     </tr>
+   </table>
 
-  <table class="center">
+   <table class="table">
+     <tr>
+        <th>Pesto</th>
+        <th>Sausage Mozzarella</th>
+        <th>Pasta Trombello</th>
+    </tr>
     <tr>
-       <th>Spaghetti and Meatballs</th>
-       <th>Chicken Alfredo</th>
-       <th>Veal Picatta</th>
-   </tr>
-   <tr>
-       <td>Homemade meatballs made from scratch in our marinara sauce</td>
-       <td>Parmesan cheese and butter that forms a
-         smooth and rich sauce coating the pasta.</td>
-       <td>Tender veal scaloppine dredged in flour and sauteed
-         in butter in a simple pan sauce made with white wine and a generous squeeze of lemon.</td>
-   </tr>
-   <tr>
-       <td>$12.95</td>
-       <td>$13.95</td>
-       <td>$14.95</td>
-   </tr>
- </table>
-
- <table class="center">
-   <tr>
-      <th>Pesto</th>
-      <th>Sausage Mozzarella</th>
-      <th>Pasta Trombello</th>
-  </tr>
-  <tr>
-      <td>made with basil, pine nuts, olive oil, and grated Parmesan blended together and served hot.</td>
-      <td>pasta with red sauce, italian sausage, and ricotta with melted mozzarella (try it with meatballs instead)</td>
-      <td>ground italian sausage with mushroom in our bianco diavolo sauce (spicy aglio olio)</td>
-  </tr>
-  <tr>
-      <td>$12.95</td>
-      <td>$11.95</td>
-      <td>$13.95</td>
-  </tr>
-</table>
-
-<table class="center" id="beverages">
-  <caption>Beverages</caption>
-  <tr>
-    <td>Root Beer</td>
-    <td>$3.00</td>
-  </tr>
-  <tr>
-    <td>Bottled Water</td>
-    <td>$1.25</td>
-  </tr>
-  <tr>
-    <td>Lemonade</td>
-    <td>$1.00</td>
-  </tr>
-  <tr>
-    <td>Iced Tea</td>
-    <td>$1.25</td>
-  </tr>
-</table>
-
-
+        <td>made with basil, pine nuts, olive oil, and grated Parmesan blended together and served hot.</td>
+        <td>pasta with red sauce, italian sausage, and ricotta with melted mozzarella (try it with meatballs instead)</td>
+        <td>ground italian sausage with mushroom in our bianco diavolo sauce (spicy aglio olio)</td>
+    </tr>
+    <tr>
+        <td>$12.95</td>
+        <td>$11.95</td>
+        <td>$13.95</td>
+    </tr>
+  </table>
+  <br />
+  <!-- <captio>Beverages</caption> -->
+  <table class="table" id="beverages">
+    <h2>Beverages</h2>
+    <!-- <caption>Beverages</caption> -->
+    <tr>
+      <td>Root Beer</td>
+      <td>$3.00</td>
+    </tr>
+    <tr>
+      <td>Bottled Water</td>
+      <td>$1.25</td>
+    </tr>
+    <tr>
+      <td>Lemonade</td>
+      <td>$1.00</td>
+    </tr>
+    <tr>
+      <td>Iced Tea</td>
+      <td>$1.25</td>
+    </tr>
+  </table>
   <footer>
-    <hr />
-    <p>1000 The Best Part of Town, Little Italy, Texas, 75056</p>
-    <p>972-555-0239</p>
+  <hr />
+    1000 The Best Part of Town, Little Italy, Texas, 75056 <BR />
+    972-555-0239
   </footer>
+  </div>
+  <!-- end BS grid-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
