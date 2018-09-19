@@ -23,8 +23,8 @@ body {
 }
 header {
   font-family: 'Italiana', serif;
-  font-size: 3em;
-  color: #406353;
+  /* font-size: 3em; */
+  color: #73AB90;
 }
 footer {
   color: #406353;
@@ -43,11 +43,12 @@ a:hover {
   color: #73AB90
 }
 a:visited {
-  color: #73AB90
+  color: #406353
 }
 nav {
     /* background-color: #406353; */
     color: #C9BCB3;
+    padding-bottom: 40px;
 }
 nav:hover {
     font-weight: bold;
@@ -57,11 +58,12 @@ nav:hover {
 h1 {
   text-align: center;
 }
-img {
-  padding: 15px;
-}
 div {
   padding: 10px;
+  /* background-color: #E8D5CF; */
+}
+#main {
+  background-color: #DBDBDB;
 }
 #home {
   color: #73AB90;
