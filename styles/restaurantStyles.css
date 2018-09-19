@@ -14,6 +14,8 @@ light green #73AB90
 */
 
 /* Your header and footer must match across the pages, so store their styles in an external file called restaurantStyles.css */
+/* @import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"); */
+
 body {
   text-align: center;
   background-color: #C9BCB3;
