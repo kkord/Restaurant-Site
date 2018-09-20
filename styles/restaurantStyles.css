@@ -11,6 +11,8 @@ PETAL: #E3BAB3
 BURGUNDY: #613A43
 FRESH: #848874
 CHARCOAL #36384C
+
+problems seeing visited link solution: #ca8377
 */
 
 /* Your header and footer must match across the pages, so store their styles in an external file called restaurantStyles.css */
@@ -21,11 +23,16 @@ body {
   background-color: #848874;
   font-family: Arial, sans-serif;
 }
+
 header {
   font-family: 'Italiana', serif;
-  /* font-size: 3em; */
   color: #E9DCCD;
 }
+
+h1 {
+  text-align: center;
+}
+
 footer {
   color: #613A43;
   display: flex;
@@ -33,29 +40,31 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
 a {
   font-size: 1.5em;
   color: #36384C;
 }
+
 nav a:hover {
   text-decoration: none;
   font-weight: bold;
   color: #613A43
 }
+
+nav a:visited {
+  color: #ca8377
+}
+
 .selected {
   background-color: #613A43;
   color: #E3BAB3;
 }
-nav a:visited {
-  color: #E3BAB3
-}
 
-h1 {
-  text-align: center;
-}
 div {
   padding: 10px;
 }
+
 .jumbotron {
   color: #848874;
 }
@@ -64,24 +73,30 @@ div {
   background-color: #E9DCCD;
   color: #613A43;
 }
+
 #home {
   color: #73AB90;
 }
+
 #restaurantCarousel {
   text-align: center;
   padding-top: 0;
 }
+
 .formDescript {
   text-align: right;
 }
+
 .removePadding {
   padding-bottom: 0;
   padding-top: 0;
 }
+
 textarea {
   resize: both;
   width: 100%;
 }
+
 choices {
   width: 100%;
 }
